@@ -6,4 +6,12 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+	<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Label Content="Label" HorizontalAlignment="Center" />
+		<TextBox Width="600"/>
+		<TextBox Width="600"/>
+		<TextBox Width="600"/>
+		<TextBox Width="600"/>
+		<Button Content="Button" Width="200" Margin="10" HorizontalAlignment="Center" />
+	</StackPanel>
 </Window>
