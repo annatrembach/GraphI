@@ -6,4 +6,34 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+	<WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+		<WrapPanel Orientation="Horizontal" Margin="10">
+			<Label Content="Label" Margin="10" />
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+		</WrapPanel>
+
+		<WrapPanel Orientation="Horizontal" Margin="10">
+			<Label Content="Label" Margin="10" />
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+			<TextBox Width="80"/>
+		</WrapPanel>
+
+		<WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+			<Button Content="Button" Width="150" Margin="10" />
+		</WrapPanel>
+	</WrapPanel>
 </Window>
