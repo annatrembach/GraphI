@@ -35,5 +35,19 @@
 					</Button>
 				</StackPanel>
 			</Border>
+			<Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+					<TextBox Grid.Row="0" Margin="5" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+						HorizontalScrollBarVisibility="Disabled"/>
+
+					<DockPanel Grid.Row="1" LastChildFill="False" Margin="5">
+						<Button Content="OK" DockPanel.Dock="Bottom" Margin="5"/>
+					</DockPanel>
+				</Grid>
+			</Border>
 		</Grid>
 </Window>
