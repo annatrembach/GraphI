@@ -6,4 +6,10 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+	    <Canvas Background="LightBlue">
+            <Label Content="Label" Canvas.Left="20" Canvas.Top="20"/>
+            <TextBox Canvas.Left="40" Canvas.Top="50" Width="120" Height="25"/>
+            <Button Content="Button" Canvas.Left="130" Canvas.Top="80" Width="75" Height="25"/>
+        </Canvas>
+
 </Window>
