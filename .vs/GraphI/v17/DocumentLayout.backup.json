@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "A:\\study\\materials\\3kurs\\3.2\\\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0442\u0438\u0432\u043D\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0443\u0432\u0430\u043D\u043D\u044F \u0433\u0440\u0430\u0444\u0456\u0447\u043D\u0438\u0445 \u0456\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0456\u0432\\GraphI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\study\\materials\\3kurs\\3.2\\\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0442\u0438\u0432\u043D\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0443\u0432\u0430\u043D\u043D\u044F \u0433\u0440\u0430\u0444\u0456\u0447\u043D\u0438\u0445 \u0456\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0456\u0432\\GraphI\\MainWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MainWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\study\\materials\\3kurs\\3.2\\\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0442\u0438\u0432\u043D\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0443\u0432\u0430\u043D\u043D\u044F \u0433\u0440\u0430\u0444\u0456\u0447\u043D\u0438\u0445 \u0456\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0456\u0432\\GraphI\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\study\\materials\\3kurs\\3.2\\\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0442\u0438\u0432\u043D\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0443\u0432\u0430\u043D\u043D\u044F \u0433\u0440\u0430\u0444\u0456\u0447\u043D\u0438\u0445 \u0456\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0456\u0432\\GraphI\\MainWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MainWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 4,
-=======
           "SelectedChildIndex": 3,
->>>>>>> a
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,37 +29,25 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "A:\\study\\materials\\3kurs\\3.2\\\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0442\u0438\u0432\u043D\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0443\u0432\u0430\u043D\u043D\u044F \u0433\u0440\u0430\u0444\u0456\u0447\u043D\u0438\u0445 \u0456\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0456\u0432\\GraphI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "A:\\study\\materials\\3kurs\\3.2\\\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0442\u0438\u0432\u043D\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0443\u0432\u0430\u043D\u043D\u044F \u0433\u0440\u0430\u0444\u0456\u0447\u043D\u0438\u0445 \u0456\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0456\u0432\\GraphI\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
 <<<<<<< HEAD
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-=======
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
->>>>>>> a
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+>>>>>>> c
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-28T20:03:57.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "A:\\study\\materials\\3kurs\\3.2\\\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0442\u0438\u0432\u043D\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0443\u0432\u0430\u043D\u043D\u044F \u0433\u0440\u0430\u0444\u0456\u0447\u043D\u0438\u0445 \u0456\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0456\u0432\\GraphI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -71,8 +55,12 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
+              "WhenOpened": "2025-02-28T20:03:55.193Z"
+=======
               "WhenOpened": "2025-02-28T20:03:55.193Z",
               "EditorCaption": ""
+>>>>>>> c
             }
           ]
         }
