@@ -34,21 +34,23 @@
                 CornerRadius="10"
                 Margin="5">
 			<StackPanel Orientation="Horizontal">
-				<Button ToolTip="Відкрити">
+				<Button ToolTip="Відкрити" Command="ApplicationCommands.Open">
 					<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\open.jpg" Width="30" Height="30"/>
 				</Button>
-				<Button ToolTip="Стерти">
+				<Button ToolTip="Стерти" Command="ApplicationCommands.Delete">
 					<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\delete.png" Width="30" Height="30"/>
 				</Button>
-				<Button ToolTip="Копіювати">
+				<Button ToolTip="Копіювати" Command="ApplicationCommands.Copy"
+                        CommandTarget="{Binding ElementName=editorTextBox}">
 					<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\copy.png" Width="30" Height="30"/>
 				</Button>
-				<Button ToolTip="Вставити">
+				<Button ToolTip="Вставити" Command="ApplicationCommands.Paste"
+                        CommandTarget="{Binding ElementName=editorTextBox}">
 					<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\paste.jpg" Width="30" Height="30"/>
 				</Button>
 			</StackPanel>
 		</Border>
-		
+
 		<Border Grid.Row="1"
                 Background="{StaticResource LinearPanelBrush}"
                 BorderBrush="#FFCBBEBE"
@@ -60,20 +62,25 @@
 					<RowDefinition />
 					<RowDefinition Height="Auto" />
 				</Grid.RowDefinitions>
-				<TextBox Grid.Row="0"
+
+				<TextBox x:Name="editorTextBox"
+                         Grid.Row="0"
                          Margin="5"
                          AcceptsReturn="True"
                          TextWrapping="Wrap"
                          VerticalScrollBarVisibility="Auto"
-                         HorizontalScrollBarVisibility="Disabled"/>
-				<DockPanel Grid.Row="1"
-                           LastChildFill="False"
-                           Margin="5">
-					
-					<Button Content="OK" DockPanel.Dock="Bottom" Style="{x:Null}"/>
+                         HorizontalScrollBarVisibility="Disabled"
+                         FontSize="{Binding ElementName=fontSlider, Path=Value}" />
+
+				<DockPanel Grid.Row="1" LastChildFill="False" Margin="5">
+					<StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+						<Label Content="Розмір шрифту:" VerticalAlignment="Center"/>
+						<Slider Margin="4" MinWidth="100" Name="fontSlider" Maximum="100" Minimum="12"/>
+					</StackPanel>
+
+					<Button Content="OK" Command="ApplicationCommands.Save" DockPanel.Dock="Bottom" Style="{x:Null}" Margin="5"/>
 				</DockPanel>
 			</Grid>
 		</Border>
 	</Grid>
 </Window>
-
