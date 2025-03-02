@@ -6,7 +6,34 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+
+			<Border Grid.Row="0"
+					BorderBrush="#FFCBBEBE"
+					BorderThickness="2"
+					CornerRadius="10"
+					Margin="5">
+				<StackPanel Orientation="Horizontal">
+					<Button ToolTip="Відкрити" Margin="5">
+						<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\open.jpg" Width="30" Height="30"/>
+					</Button>
+
+					<Button ToolTip="Стерти" Margin="5">
+						<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\delete.png" Width="30" Height="30"/>
+					</Button>
+
+					<Button ToolTip="Копіювати" Margin="5">
+						<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\copy.png" Width="30" Height="30"/>
+					</Button>
+
+					<Button ToolTip="Вставити" Margin="5">
+						<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\paste.jpg" Width="30" Height="30"/>
+					</Button>
+				</StackPanel>
+			</Border>
+		</Grid>
 </Window>
