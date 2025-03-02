@@ -6,48 +6,74 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-		<Grid>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto" />
-				<RowDefinition />
-			</Grid.RowDefinitions>
 
-			<Border Grid.Row="0"
-					BorderBrush="#FFCBBEBE"
-					BorderThickness="2"
-					CornerRadius="10"
-					Margin="5">
-				<StackPanel Orientation="Horizontal">
-					<Button ToolTip="Відкрити" Margin="5">
-						<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\open.jpg" Width="30" Height="30"/>
-					</Button>
+	<Window.Resources>
+		<LinearGradientBrush x:Key="LinearPanelBrush" StartPoint="0,0" EndPoint="1,0">
+			<GradientStop Color="Yellow" Offset="0"/>
+			<GradientStop Color="Blue" Offset="0.5"/>
+			<GradientStop Color="Yellow" Offset="1"/>
+		</LinearGradientBrush>
 
-					<Button ToolTip="Стерти" Margin="5">
-						<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\delete.png" Width="30" Height="30"/>
-					</Button>
+		<Style TargetType="Button">
+			<Setter Property="Margin" Value="5"/>
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="BorderBrush" Value="White"/>
+		</Style>
+	</Window.Resources>
 
-					<Button ToolTip="Копіювати" Margin="5">
-						<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\copy.png" Width="30" Height="30"/>
-					</Button>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition />
+		</Grid.RowDefinitions>
 
-					<Button ToolTip="Вставити" Margin="5">
-						<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\paste.jpg" Width="30" Height="30"/>
-					</Button>
-				</StackPanel>
-			</Border>
-			<Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5">
-				<Grid>
-					<Grid.RowDefinitions>
-						<RowDefinition />
-						<RowDefinition Height="Auto" />
-					</Grid.RowDefinitions>
-					<TextBox Grid.Row="0" Margin="5" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
-						HorizontalScrollBarVisibility="Disabled"/>
-
-					<DockPanel Grid.Row="1" LastChildFill="False" Margin="5">
-						<Button Content="OK" DockPanel.Dock="Bottom" Margin="5"/>
-					</DockPanel>
-				</Grid>
-			</Border>
-		</Grid>
+		<Border Grid.Row="0"
+                Background="{StaticResource LinearPanelBrush}"
+                BorderBrush="#FFCBBEBE"
+                BorderThickness="2"
+                CornerRadius="10"
+                Margin="5">
+			<StackPanel Orientation="Horizontal">
+				<Button ToolTip="Відкрити">
+					<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\open.jpg" Width="30" Height="30"/>
+				</Button>
+				<Button ToolTip="Стерти">
+					<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\delete.png" Width="30" Height="30"/>
+				</Button>
+				<Button ToolTip="Копіювати">
+					<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\copy.png" Width="30" Height="30"/>
+				</Button>
+				<Button ToolTip="Вставити">
+					<Image Source="A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\images\paste.jpg" Width="30" Height="30"/>
+				</Button>
+			</StackPanel>
+		</Border>
+		
+		<Border Grid.Row="1"
+                Background="{StaticResource LinearPanelBrush}"
+                BorderBrush="#FFCBBEBE"
+                BorderThickness="2"
+                CornerRadius="10"
+                Margin="5">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition />
+					<RowDefinition Height="Auto" />
+				</Grid.RowDefinitions>
+				<TextBox Grid.Row="0"
+                         Margin="5"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Auto"
+                         HorizontalScrollBarVisibility="Disabled"/>
+				<DockPanel Grid.Row="1"
+                           LastChildFill="False"
+                           Margin="5">
+					
+					<Button Content="OK" DockPanel.Dock="Bottom" Style="{x:Null}"/>
+				</DockPanel>
+			</Grid>
+		</Border>
+	</Grid>
 </Window>
+
