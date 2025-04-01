@@ -3,7 +3,6 @@ A:\study\materials\3kurs\3.2\Декларативне програмування
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\obj\Debug\App.g.cs
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\obj\Debug\BookApp_Content.g.cs
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\obj\Debug\BookApp_MarkupCompile.cache
-A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\bin\Debug\Date\DbTest.mdf
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\bin\Debug\BookApp.exe.config
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\bin\Debug\BookApp.exe
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\bin\Debug\BookApp.pdb
@@ -14,4 +13,4 @@ A:\study\materials\3kurs\3.2\Декларативне програмування
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\obj\Debug\BookApp.csproj.CoreCompileInputs.cache
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\obj\Debug\BookApp.exe
 A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\obj\Debug\BookApp.pdb
-A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\obj\Debug\BookApp_MarkupCompile.lref
+A:\study\materials\3kurs\3.2\Декларативне програмування графічних інтерфейсів\GraphI\BookApp\bin\Debug\Db\BookDb.mdf

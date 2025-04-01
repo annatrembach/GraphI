@@ -1,29 +1,30 @@
 ﻿using System;
-using System.Configuration;
+using System.Data;
 using System.Windows;
 
 namespace BookApp
 {
     public partial class MainWindow : Window
     {
+        private readonly DatabaseAccess _databaseAccess;
+
         public MainWindow()
         {
             InitializeComponent();
-            GetConnectionString();
+            _databaseAccess = new DatabaseAccess();
         }
 
-        private void GetConnectionString()
+        private void LoadBooks_Click(object sender, RoutedEventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"]?.ConnectionString;
+            DataTable booksTable = _databaseAccess.GetBooks();
 
-            if (string.IsNullOrEmpty(connectionString))
+            if (booksTable.Rows.Count == 0)
             {
-                MessageBox.Show("Рядок з'єднання не знайдено!", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Дані не знайдено!", "Увага", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-            else
-            {
-                MessageBox.Show("Рядок з'єднання: " + connectionString, "Інформація", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
+
+            BooksDataGrid.ItemsSource = booksTable.DefaultView;
         }
+
     }
 }

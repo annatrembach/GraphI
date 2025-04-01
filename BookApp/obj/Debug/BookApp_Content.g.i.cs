@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("date/dbtest.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db/bookdb.mdf")]
 
 

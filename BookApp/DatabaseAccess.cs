@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows;
 
 namespace BookApp
 {
@@ -12,7 +13,9 @@ namespace BookApp
         public DatabaseAccess()
         {
             _connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
+            MessageBox.Show(_connectionString);
         }
+
 
         public DataTable GetBooks()
         {
@@ -22,12 +25,14 @@ namespace BookApp
             {
                 using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
+                    connection.Open();
+                    MessageBox.Show("Підключено до бази!");
+
                     string query = "SELECT * FROM Book";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                         {
-                            connection.Open();
                             adapter.Fill(dataTable);
                         }
                     }
@@ -35,10 +40,11 @@ namespace BookApp
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Помилка отримання даних: " + ex.Message);
+                MessageBox.Show("Помилка отримання даних: " + ex.Message);
             }
 
             return dataTable;
         }
+
     }
 }
