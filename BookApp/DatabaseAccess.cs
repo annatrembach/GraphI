@@ -87,17 +87,14 @@ namespace BookApp
                     connection.Open();
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        // Додаємо параметр Id у будь-якому випадку
                         command.Parameters.AddWithValue("@Id", id);
 
-                        // Перевіряємо, чи є відповідний параметр у запиті перед додаванням
                         if (query.Contains("@ISBN")) command.Parameters.AddWithValue("@ISBN", isbn != 0 ? (object)isbn : DBNull.Value);
                         if (query.Contains("@Name")) command.Parameters.AddWithValue("@Name", !string.IsNullOrEmpty(name) ? (object)name : DBNull.Value);
                         if (query.Contains("@Author")) command.Parameters.AddWithValue("@Author", !string.IsNullOrEmpty(author) ? (object)author : DBNull.Value);
                         if (query.Contains("@Publisher")) command.Parameters.AddWithValue("@Publisher", !string.IsNullOrEmpty(publisher) ? (object)publisher : DBNull.Value);
                         if (query.Contains("@Year")) command.Parameters.AddWithValue("@Year", year != 0 ? (object)year : DBNull.Value);
 
-                        // Виконання SQL-команди
                         command.ExecuteNonQuery();
                     }
                 }
